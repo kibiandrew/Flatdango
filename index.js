@@ -33,5 +33,13 @@ const infodiv = document.querySelector("filmTitle");
   film.innerHTML=film.capacity;
   const showtime=document.querySelector("#showtime")
   film.innerHTML=film.showtime;
-  const ticket_sold=document.querySelector("#ticket_sold")
-  film.innerHTML=film.ticket_sold;
+  const soldtickets=document.querySelector("#soldticket")
+  film.innerHTML=film.soldtickets;
+
+  //calculate available tickets
+  const capacity = document.getElementById("capacity")
+  let tickets =Number(movie.capacity -Movie.tickets_sold)
+ while (tickets >=1 && tickets <=30)=>{
+  capacity-tickets;
+  
+ }
