@@ -9,3 +9,15 @@ function openNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
   }
+  //
+  let movie;
+document.addEventListener("DOMContentLoaded", () =>{
+  getFilm()
+  
+  })
+  //link to connect to the json db
+const getFilm =()=>{
+  fetch("http://localhost:3000/characters")
+  .then(response => response.json())
+  .then(getMovie)
+}
