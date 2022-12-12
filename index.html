@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <title>Document</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" 
     href ="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
-
+  <title>flatiron movies</title>
 </head>
-<body class="card-body", bgcolor="gre">
-    <div class="sidenav">
-        <!-- side menu -->
-          <ul class=" list" id="films">
-            <li class="film item">MOVIES.</li>
-          </ul>
-    </div>
-</div>
+<body bgcolor="gre">
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1 style="color:blue ; padding: 5px;">MOVIES</h1>
+  <a href="#card-title">The Giant Gila Monster</a>
+  <a href="#card-title">The Giant Gila Monster</a>
+</div
 
-<div class="body-text">
-<!-- body content -->
-<hi style="color:#c2d512;" >FLATIRON MOVIES</hi>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; FILM MENU</button>
+  <div class="header" style="color:rgb(63, 142, 74);"><h2>FLATIRON MOVIES THEATRE</h2></div>
 </div>
-<div class="posterdiv">
-        <img
-          id="poster"
-          src="image/manos.jpg"
-          alt="movie"
-        />
-      </div>
-      <div class="purchase">
-        <div class="tvshow" id="show">
-            <div id="title" class="title" style="color:#c2d512" > TITLE</div>
-            <div id="runtime" class="meta" style="color:#c2d512" >RUNTIME min</div>
-            <div class="content" style="color:#c2d512" >
-              <div class="description" style="color:#1f7796" >
-                <div id="film-info" style="color:#401590" >[MOVIE DESCRIPTION</div>
-                <span id="showtime" class="ui label" style="color:#c2d512" >[SHOWTIME]</span>
-                <span id="ticket-num" style="color:#d85521" >[X]</span> remaining tickets
-              </div>
-            </div>
-            <div class="buyticket">
-              <button id="buy-ticket" class="ui orange button">
-                Buy Ticket
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    
+<div class="moviecard" style="color:rgb(16, 146, 142)">
+                    <h4 class="card-title" id="filmTitle">The Giant Gila Monster</h4>
+                    <img class="card-img"
+                        src="https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+                        alt="Film details" id="poster">
+                    <p id="movieDescription">A giant lizard terrorizes a rural Texas community and a heroic teenager attempts to destroy the creature</p>
+
+                    <ul class="d-flex justify-content-center me-2" id="moviedata">
+                        <li class="border border-success rounded me-2"  id="runtime"><span class="border-white">Runtime:</span> 108 minutes</li>
+                        <li class="border border-success rounded me-2" id="capacity">capacity 30</li>
+                        <li class="border border-success rounded me-2" id="showtime">Showtime: 04:00PM</li>
+                        <li class="border border-success rounded me-2" id="tickets_sold">tickets_sold 27</li>
+                    </ul>
+
+                    <button style="color: chocolate;" type="button" class="btn btn-warning" id="buyTicket">purchase</button>
+
+
+                </div>
+</div>
+  <script src="/index.js"></script>
 </body>
 </html>
