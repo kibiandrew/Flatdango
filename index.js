@@ -21,3 +21,17 @@ const getFilm =()=>{
   .then(response => response.json())
   .then(getMovie)
 }
+const infodiv = document.querySelector("filmTitle");
+  infodiv.innerHTML = character.name
+  const moviePoster =document.querySelector ("img#poster");
+  moviePoster.src =film.image;
+  const movieDescription=document.querySelector("#movieDescription")
+  film.innerHTML=film.movieDescription;
+  const runtime=document.querySelector("#runtime")
+  film.innerHTML=film.runtime;
+  const capacity=document.querySelector("#capacity")
+  film.innerHTML=film.capacity;
+  const showtime=document.querySelector("#showtime")
+  film.innerHTML=film.showtime;
+  const ticket_sold=document.querySelector("#ticket_sold")
+  film.innerHTML=film.ticket_sold;
