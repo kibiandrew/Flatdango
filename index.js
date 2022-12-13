@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () =>{
   })
   //link to connect to the json db
 const getFilm =()=>{
-  fetch("http://localhost:3000/characters")
+  fetch("http://localhost:3000/films")
   .then(response => response.json())
   .then(getMovie)
 }
@@ -37,9 +37,10 @@ const infodiv = document.querySelector("filmTitle");
   film.innerHTML=film.soldtickets;
 
 //   //calculate available tickets
-//   const allcapacity = document.getElementById("capacity")
+//   const capacity = document.getElementById("capacity")
 //   let tickets =Number(movie.capacity -Movie.tickets_sold)
 //  while (tickets >=1 && tickets <=30)=>{
-//   allcapacity-tickets;
+//   capacity-tickets;
   
 //  }
+ 
